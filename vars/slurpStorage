@@ -1,0 +1,8 @@
+import groovy.json.JsonSlurper
+def call(String storageURL){
+  def url = new URL(storageURL)
+  def json = url.getText()
+  def slurper = new JsonSlurper()
+  def jsonArray = slurper.parseText(json)
+  return jsonArray
+}

@@ -1,0 +1,17 @@
+kind: Pod
+metadata:
+  name: mysql
+  namespace: mysql
+spec:
+  serviceAccountName: jenkins
+  containers:
+  - name: mysql
+    image: mysql:latest
+    resources:
+      requests:
+        memory: "500Mi"
+    command:
+    - cat
+    tty: true
+  securityContext:
+    runAsUser: 1000
