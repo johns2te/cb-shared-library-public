@@ -5,7 +5,7 @@ spec:
   serviceAccountName: jenkins
   containers:
   - name: maven-jdk17
-    image: 3.9.9-amazoncorretto-17-alpine # maven:3.8.8-eclipse-temurin-17-alpine
+    image: maven:3.9.9-amazoncorretto-17-alpine # maven:3.8.8-eclipse-temurin-17-alpine
     command:
     - cat
     tty: true
