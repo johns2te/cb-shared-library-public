@@ -13,6 +13,9 @@ spec:
     image: openjdk:11.0.11-slim-buster
     command:
     - cat
+    env:
+    - name: MAVEN_OPTS
+      value: "-Xss4m"  # Increase stack size to 4 MB
     tty: true
   securityContext:
     runAsUser: 1000
