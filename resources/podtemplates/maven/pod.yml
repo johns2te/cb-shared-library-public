@@ -12,6 +12,14 @@ spec:
     - name: MAVEN_OPTS
       value: "-Xss4m"
     tty: true
+   - name: open-jdk17
+    image: openjdk:24-slim
+    command:
+    - cat
+    env:
+    - name: MAVEN_OPTS
+      value: "-Xss4m"
+    tty: true
   - name: jdk11
     image: openjdk:11.0.11-slim-buster
     command:
