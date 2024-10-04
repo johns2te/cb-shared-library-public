@@ -1,4 +1,4 @@
-def call() {
+def call(currentBuild) {
     script {
         // Introducing a small sleep to ensure logs are populated (if timing is an issue)
         sleep(5)
