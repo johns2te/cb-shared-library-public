@@ -19,6 +19,8 @@ spec:
     env:
     - name: MAVEN_OPTS
       value: "-Xss4m"
+    - name: HOME
+      value: "/home/jenkins/agent/workspace/spring-petclinic_main" 
     tty: true
   - name: jdk11
     image: openjdk:11.0.11-slim-buster
