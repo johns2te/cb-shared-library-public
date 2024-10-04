@@ -12,8 +12,8 @@ spec:
     - name: MAVEN_OPTS
       value: "-Xss4m"
     tty: true
-  - name: maven-open-jdk17
-    image: maven:3.8.3-openjdk-17
+  - name: open-jdk17
+    image: openjdk:17-jdk-slim
     command:
     - cat
     env:
