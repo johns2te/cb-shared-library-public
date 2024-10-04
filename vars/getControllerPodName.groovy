@@ -1,11 +1,11 @@
-def call(currentBuild) {
+def call(logOutput) {
     script {
         // Introducing a small sleep to ensure logs are populated (if timing is an issue)
-        sleep(5)
+        //sleep(5)
 
         // Extract the log content from the current build
-        def logOutput = currentBuild.rawBuild.getLog()  // Fetch the logs
-        echo "First log lines: ${logOutput}"
+        //def logOutput = currentBuild.rawBuild.getLog()  // Fetch the logs
+        //echo "First log lines: ${logOutput}"
 
         // Use regex or split to extract the controller pod name
         def matcher = (logOutput =~ /Managed by (.+)/)
