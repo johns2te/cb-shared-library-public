@@ -12,6 +12,6 @@ spec:
     image: gcr.io/technologists/apache-benchmark:0.0.1
     command:
     - cat
-    tty: truee
+    tty: true
   securityContext:
     runAsUser: 1000
